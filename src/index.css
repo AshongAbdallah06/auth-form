@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito", sans-serif;
+}
+
+body,
+form,
+form div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	font-size: 0.9rem;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+button {
+	cursor: pointer;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(20, 129, 255);
+}
+
+form {
+	background-color: white;
+	padding: 2rem 1rem;
+	border-radius: 0.5rem;
+	width: 23rem;
+}
+
+form h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+form div {
+	width: 100%;
+}
+
+form input {
+	width: 90%;
+	padding: 0.7rem;
+	outline: none;
+	border: 1.5px solid rgb(211, 211, 211);
+	border-radius: 0.3rem;
+}
+
+.error {
+	color: red;
+	text-align: left;
+	margin-bottom: 0.6rem;
+	font-size: 0.8rem;
+	width: 90%;
+}
+
+form input::placeholder {
+	font-size: 0.8rem;
+}
+
+.forgot-password {
+	color: blue;
+	background-color: transparent;
+	border: none;
+	margin-bottom: 1rem;
+	font-size: 0.8rem;
+}
+
+.login {
+	width: 90%;
+	background-color: rgb(2, 113, 183);
+	padding: 0.8rem;
+	font-size: 1rem;
+	color: white;
+	border: none;
+	border-radius: 0.3rem;
+}
+
+.or {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.5rem;
+	width: 90%;
+	color: gray;
+}
+
+.or::before,
+.or::after {
+	content: "";
+	display: block;
+	background-color: rgb(211, 211, 211);
+	height: 1px;
+	width: 70%;
+}
+
+.or::before {
+	margin-right: 0.5rem;
+}
+.or::after {
+	margin-left: 0.5rem;
+}
+
+.btns button {
+	width: 90%;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.3rem;
+}
+
+@media (max-width: 500px) {
+	form {
+		width: 100%;
+	}
+
+	p {
+		font-size: 0.7rem;
+	}
+}
