@@ -44,6 +44,7 @@ form {
 	padding: 2rem 1rem;
 	border-radius: 0.5rem;
 	width: 23rem;
+	transition: all 0.15s;
 }
 
 form h1 {
@@ -126,9 +127,19 @@ form input::placeholder {
 	border-radius: 0.3rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 	form {
-		width: 100%;
+		width: 20rem;
+	}
+
+	p {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 372px) {
+	form {
+		width: 18rem;
 	}
 
 	p {

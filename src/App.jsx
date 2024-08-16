@@ -4,7 +4,7 @@ import Signup from "./pages/Signup";
 
 function App() {
 	return (
-		<div className="container">
+		<>
 			<Router>
 				<Routes>
 					<Route
@@ -23,7 +23,7 @@ function App() {
 					/>
 				</Routes>
 			</Router>
-		</div>
+		</>
 	);
 }
 
